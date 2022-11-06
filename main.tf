@@ -5,7 +5,7 @@ provider "azurerm" {
 
 variable "region" {
   type = string
-  default = "europewest"
+  default = "westeurope"
 }
 
 resource "azurerm_resource_group" "TF_test" {
