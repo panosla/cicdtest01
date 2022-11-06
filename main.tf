@@ -12,3 +12,5 @@ resource "azurerm_resource_group" "TF_test" {
     name = "tfmainrg"
     location = var.region
 }
+
+#dfsf
