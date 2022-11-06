@@ -3,7 +3,12 @@ provider "azurerm" {
   features {}
 }
 
+variable "region" {
+  type = string
+  default = "europewest"
+}
+
 resource "azurerm_resource_group" "TF_test" {
     name = "tfmainrg"
-    location = "europewest"
+    location = var.region
 }
